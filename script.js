@@ -61,13 +61,23 @@ function playRound(humanChoice, computerChoice){
     if (lowerChoice === "paper" && computerChoice === "paper"){
     }
 }
-
+if (humanScore > computerScore){
+    return "Human wins!"
 }
+else if (computerScore > humanScore){
+    return "Computer wins!"
+}
+else{
+    return "It's a tie!!"
+}
+}
+
 //console.log(getComputerChoice());
 // console.log(getHumanChoice());
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
+// const humanSelection = getHumanChoice();
+// const computerSelection = getComputerChoice();
 
 // console.log(playRound(humanSelection, computerSelection));
 // console.log(computerScore);
 // console.log(humanScore);
+console.log(playGame());
